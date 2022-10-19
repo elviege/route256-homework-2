@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "WeatherDataSimulation.GrpcService";
+
+import "google/protobuf/timestamp.proto";
+
+package generator;
+
+service WheatherDataGenerator {
+  rpc GetLast (WeatherRequest) returns (WeatherReply);
+  rpc GetDataStream(WeatherRequest) returns (stream WeatherReply);
+  rpc GetDataBiStream(stream WeatherRequest) returns (stream WeatherReply);
+}
+
+message WeatherRequest {
+  sensor sensor = 1;
+}
+
+message WeatherReply {
+  int64 id = 1;
+  WeatherData data = 2;
+  google.protobuf.Timestamp created_at = 3;
+  sensor sensor = 4;
+}
+
+message WeatherData {
+  int32 temperature = 1;
+  int32 humidity = 2;
+  int32 carbon_dioxide = 3;
+}
+
+enum sensor {
+  INSIDE = 0;
+  OUTSIDE = 1;
+}
+
+/*message MultiWeatherReply{
+  repeated WeatherReply weather = 1;
+}*/

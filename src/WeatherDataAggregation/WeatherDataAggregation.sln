@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherDataAggregation.Client", "WeatherDataAggregation.Client\WeatherDataAggregation.Client.csproj", "{D65A8158-842C-44B9-B4C8-16B9212E30E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherDataAggregation.Core", "WeatherDataAggregation.Core\WeatherDataAggregation.Core.csproj", "{4E2A4822-64CD-477D-B440-DBAE1C4DB628}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D65A8158-842C-44B9-B4C8-16B9212E30E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65A8158-842C-44B9-B4C8-16B9212E30E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65A8158-842C-44B9-B4C8-16B9212E30E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65A8158-842C-44B9-B4C8-16B9212E30E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2A4822-64CD-477D-B440-DBAE1C4DB628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2A4822-64CD-477D-B440-DBAE1C4DB628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2A4822-64CD-477D-B440-DBAE1C4DB628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2A4822-64CD-477D-B440-DBAE1C4DB628}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
